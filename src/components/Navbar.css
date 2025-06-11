@@ -1,0 +1,18 @@
+.navbar {
+    background-color: #F0FDE5;
+}
+
+.navbar-brand {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+
+.nav-link:hover, .navbar-brand:hover {
+    color: #D61AAE !important;
+    box-shadow: inset 0 -2px 0 #D61AAE;
+}
+
+.navbar-toggler {
+    background-color: #D61AAE !important;
+}
