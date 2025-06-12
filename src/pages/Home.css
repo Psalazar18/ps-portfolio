@@ -1,10 +1,51 @@
 .main {
     background-color: #000;
     min-height: 100vh;
+    padding-top: 5rem;
     width: 100%;
-    margin-top: 5em;
 }
 
-.main h1 {
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-text {
+    padding: 3rem;
+    max-width: 100%;
+}
+
+.main-text h1,
+.main-text p {
     color: #fff;
+}
+
+.main-text h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+/* TABLETS */
+@media (min-width: 768px) {
+  .main-text {
+    padding: 3rem;
+    max-width: 80%;
+  }
+
+  .main-text h1 {
+    font-size: 5.5rem;
+  }
+}
+
+/* DESKTOPS */
+@media (min-width: 1024px) {
+  .main-text {
+    padding: 4rem;
+    max-width: 70%;
+  }
+
+  .main-text h1 {
+    font-size: 7rem;
+  }
 }
