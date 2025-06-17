@@ -1,0 +1,80 @@
+.contact {
+    background-color: #222222;
+    min-height: 100vh;
+    padding: 5rem 1rem;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact h1 {
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 3rem 1rem;
+
+}
+
+.cv-container {
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.cv-box {
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+}
+
+.cv-download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 2px solid #D61AAE;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #D61AAE;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    height: 48px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.cv-download-btn:after {
+    background-color: #D61AAE;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.cv-download-btn:hover:after {
+    transform: translate(0, 0);
+}
+
+/* DESKTOPS */
+@media (min-width: 1024px) {
+.contact {
+    padding: 6rem 1rem;
+}
+}

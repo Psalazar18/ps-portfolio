@@ -6,7 +6,7 @@ function Navbar() {
         <>
             <nav className="navbar navbar-expand-lg fixed-top">
                 <div className="container-fluid">
-                    <NavLink
+                    <NavLink 
                         to="/"
                         className={({ isActive }) =>
                             isActive ? "navbar-brand text-center ms-4 fw-bold" : "navbar-brand text-center ms-4"
@@ -32,7 +32,7 @@ function Navbar() {
                             <NavLink
                                 to="/"
                                 className={({ isActive }) =>
-                                    isActive ? "nav-link text-dark fw-bold" : "nav-link text-dark"
+                                    isActive ? "nav-link fw-bold" : "nav-link  "
                                 }
                                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
                             >
@@ -42,7 +42,7 @@ function Navbar() {
                             <NavLink
                                 to="/experience"
                                 className={({ isActive }) =>
-                                    isActive ? "nav-link text-dark fw-bold" : "nav-link text-dark"
+                                    isActive ? "nav-link fw-bold" : "nav-link  "
                                 }
                                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
                             >
@@ -52,7 +52,7 @@ function Navbar() {
                             <NavLink
                                 to="/skills"
                                 className={({ isActive }) =>
-                                    isActive ? "nav-link text-dark fw-bold" : "nav-link text-dark"
+                                    isActive ? "nav-link fw-bold" : "nav-link  "
                                 }
                                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
                             >
@@ -62,7 +62,7 @@ function Navbar() {
                             <NavLink
                                 to="/certificates"
                                 className={({ isActive }) =>
-                                    isActive ? "nav-link text-dark fw-bold" : "nav-link text-dark"
+                                    isActive ? "nav-link fw-bold" : "nav-link  "
                                 }
                                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
                             >
@@ -72,7 +72,7 @@ function Navbar() {
                             <NavLink
                                 to="/contact"
                                 className={({ isActive }) =>
-                                    isActive ? "nav-link text-dark fw-bold" : "nav-link text-dark"
+                                    isActive ? "nav-link fw-bold" : "nav-link  "
                                 }
                                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
                             >
