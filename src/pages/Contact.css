@@ -3,6 +3,9 @@
     min-height: 100vh;
     padding: 5rem 1rem;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -16,65 +19,65 @@
     font-size: 4.5rem;
     text-transform: uppercase;
     color: #fff;
-    padding: 3rem 1rem;
+    padding: 2rem 1rem;
 
 }
 
 .cv-container {
+    display: flex;
+    justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
 }
 
 .cv-box {
-    background-color: #F5F5F5;
-    border-radius: 12px;
-    padding: 1rem;
-    max-width: 300px;
-    text-align: center;
+    position: relative;
+    display: inline-block;
 }
 
 .cv-download-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    border: 2px solid #D61AAE;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #D61AAE;
-    font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    height: 48px;
-    max-width: 100%;
-    padding: 0 25px;
-    position: relative;
-    text-decoration: none;
-    z-index: 1;
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid #D61AAE;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #D61AAE;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  height: 4rem;
+  padding: 0 25px;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.cv-download-btn:after {
-    background-color: #D61AAE;
-    border-radius: 8px;
-    content: "";
-    display: block;
-    height: 48px;
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: -2px;
-    transform: translate(8px, 8px);
-    transition: transform .2s ease-out;
-    z-index: -1;
+.cv-box:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D61AAE;
+  border-radius: 8px;
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease;
+  z-index: 1;
 }
 
-.cv-download-btn:hover:after {
+.cv-box:hover:after {
     transform: translate(0, 0);
 }
 
+
 /* DESKTOPS */
 @media (min-width: 1024px) {
-.contact {
-    padding: 6rem 1rem;
-}
+    .contact {
+        padding: 6rem 1rem;
+    }
 }
