@@ -2,11 +2,19 @@ import { NavLink } from "react-router-dom";
 import './Navbar.css';
 
 function Navbar() {
+
+    const handleLinkClick = () => {
+        const navbar = document.getElementById('navbarNavAltMarkup');
+        const bsCollapse = bootstrap.Collapse.getInstance(navbar);
+        if (bsCollapse) {
+            bsCollapse.hide();
+        }
+    };
     return (
         <>
             <nav className="navbar navbar-expand-lg fixed-top">
                 <div className="container-fluid">
-                    <NavLink 
+                    <NavLink
                         to="/"
                         className={({ isActive }) =>
                             isActive ? "navbar-brand text-center ms-4 fw-bold" : "navbar-brand text-center ms-4"
@@ -35,6 +43,7 @@ function Navbar() {
                                     isActive ? "nav-link fw-bold" : "nav-link  "
                                 }
                                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
+                                onClick={handleLinkClick}
                             >
                                 Home
                             </NavLink>
@@ -45,18 +54,9 @@ function Navbar() {
                                     isActive ? "nav-link fw-bold" : "nav-link  "
                                 }
                                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
+                                onClick={handleLinkClick}
                             >
                                 Experience
-                            </NavLink>
-
-                            <NavLink
-                                to="/skills"
-                                className={({ isActive }) =>
-                                    isActive ? "nav-link fw-bold" : "nav-link  "
-                                }
-                                aria-current={({ isActive }) => (isActive ? "page" : undefined)}
-                            >
-                                Skills
                             </NavLink>
 
                             <NavLink
@@ -65,6 +65,7 @@ function Navbar() {
                                     isActive ? "nav-link fw-bold" : "nav-link  "
                                 }
                                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
+                                onClick={handleLinkClick}
                             >
                                 Certificates
                             </NavLink>
@@ -75,6 +76,7 @@ function Navbar() {
                                     isActive ? "nav-link fw-bold" : "nav-link  "
                                 }
                                 aria-current={({ isActive }) => (isActive ? "page" : undefined)}
+                                onClick={handleLinkClick}
                             >
                                 Contact
                             </NavLink>

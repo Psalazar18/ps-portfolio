@@ -6,7 +6,7 @@ function Contact() {
         <>
             <section className="contact" aria-labelledby="contact-heading">
                 <div className="container">
-                    <h1 className="">Contact</h1>
+                    <h1>Contact</h1>
                     <div className="cv-container d-flex flex-row" role="group" aria-label="Descarga de currículum">
                         <div className="cv-box">
                             <a 
