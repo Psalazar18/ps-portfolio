@@ -1,4 +1,4 @@
-.contact {
+.contact-section {
     background-color: #222222;
     min-height: 100vh;
     padding: 5rem 1rem;
@@ -15,7 +15,7 @@
     flex-direction: column;
 }
 
-.contact h1 {
+.contact-section h1 {
     font-size: 4.5rem;
     text-transform: uppercase;
     color: #fff;
@@ -76,7 +76,7 @@
 
 /* DESKTOPS */
 @media (min-width: 1024px) {
-    .contact {
+    .contact-section {
         padding: 6rem 1rem;
     }
 }

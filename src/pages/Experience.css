@@ -1,0 +1,9 @@
+.experience-section {
+    background-color: #222222;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

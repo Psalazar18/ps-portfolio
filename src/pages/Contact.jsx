@@ -4,7 +4,7 @@ import './Contact.css'
 function Contact() {
     return (
         <>
-            <section className="contact" aria-labelledby="contact-heading">
+            <section className="contact-section" aria-labelledby="contact-heading">
                 <div className="container">
                     <h1>Contact</h1>
                     <div className="cv-container d-flex flex-row" role="group" aria-label="Descarga de currículum">

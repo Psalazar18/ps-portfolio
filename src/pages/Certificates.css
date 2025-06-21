@@ -1,4 +1,4 @@
-.certificates {
+.certificates-section {
     background-color: #222222;
     min-height: 100vh;
     padding-top: 5rem;
@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.certificates h1 {
+.certificates-section h1 {
     font-size: 3.5rem;
     text-transform: uppercase;
     color: #fff;
@@ -59,7 +59,7 @@
 
 /* DESKTOPS */
 @media (min-width: 1024px) {
-    .certificates h1 {
+    .certificates-section h1 {
         font-size: 4.5rem;
     }
 
