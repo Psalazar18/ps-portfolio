@@ -25,7 +25,7 @@ const Certificates = () => {
                                     alt={`Certificado ${cert.name}`}
                                 />
                                 <div className="card-body text-center">
-                                    <h5 className="card-title">{cert.name}</h5>
+                                    <p className="card-title h5">{cert.name}</p>
                                 </div>
                             </div>
                         </div>

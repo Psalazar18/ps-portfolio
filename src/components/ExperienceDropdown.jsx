@@ -25,18 +25,28 @@ const ExperienceSection = ({ title, summary, type, children }) => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            <div className="dropdown-container" onClick={handleToggle}>
+            <button
+                className="dropdown-container"
+                onClick={handleToggle}
+                aria-expanded={isOpen}
+                aria-controls={`panel-${title.replace(/\s+/g, '-').toLowerCase()}`}
+            >
                 <div className="dropdown-texts">
                     <h2>{title}</h2>
-                    {shouldShowSummary && (
-                        <p>{summary}</p>
-                    )}
+                    {shouldShowSummary && <p className="summary">{summary}</p>}
                 </div>
-                <div className="dropdown-arrow">{isOpen ? "▲" : "▼"}</div>
-            </div>
+                <div className="dropdown-arrow" aria-hidden="true">
+                    {isOpen ? '▲' : '▼'}
+                </div>
+            </button>
 
             {isOpen && (
-                <div className="dropdown-content">
+                <div
+                    id={`panel-${title.replace(/\s+/g, '-').toLowerCase()}`}
+                    className="dropdown-content"
+                    role="region"
+                    aria-labelledby={`dropdown-${title.replace(/\s+/g, '-').toLowerCase()}`}
+                >
                     {children}
                 </div>
             )}

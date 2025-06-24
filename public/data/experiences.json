@@ -1,0 +1,222 @@
+[
+    {
+        "id": 10,
+        "type": "web",
+        "company": "ONU(CEPAL)",
+        "role": "Web UI Developer",
+        "location": "Santiago, Chile",
+        "period": "Nov 2024 - Actualidad",
+        "description": [
+        "Desarrollo y mantenimiento de una prueba de concepto integrando Drupal con un frontend en javascript.",
+        "Configuración de entornos de desarrollo con Ddev y Docker para optimizar el flujo de trabajo.",
+        "Consumo de datos desde APIs RESTful en Drupal para el frontend",
+        "Ayuda en la afinación de detalles en la migración de Drupal 7 a Drupal 10.",
+        "Manejo de GitLab y GitHub para versionado y colaboración en equipo.",
+        "Coordinación con el equipo para la resolución de tareas en Jira y gestión de issues."
+        ],
+        "skills": [
+            "Drupal",
+            "JavaScript",
+            "Twig",
+            "APIs REST",
+            "GitLab",
+            "Jira",
+            "CSS",
+            "SCRUM",
+            "HTML",
+            "Bootstrap",
+            "Trabajo en equipo"        
+        ]
+    },
+    {
+        "id": 9,
+        "type": "web",
+        "company": "GLOBANT",
+        "role": "Web UI Developer, Jr. Adv",
+        "location": "Santiago, Chile",
+        "period": "Dic. 2021 - May. 2024",
+        "description": [
+            "Creación y edición de páginas y publicaciones en WordPress con el editor de bloques Gutenberg.",
+            "Gestión de la base de datos de WordPress para tarjetas de programas y plugins de tablas.",
+            "Experiencia con shortcodes y bloques reutilizables en Contentful",
+            "Adquirió experiencia práctica en React.js desarrollando proyectos personales, utilizando gestión de estado, hooks e integrando RESTful APIs.",
+            "Sólido manejo de Jira para la gestión de proyectos y el seguimiento de incidencias, asegurando una coordinación y resolución eficiente de tareas."
+        ],
+        "skills": [
+            "React",
+            "JavaScript",
+            "Wordpress",
+            "Contentful",
+            "APIs REST",
+            "GitHub",
+            "Jira",
+            "SCRUM",
+            "CSS",
+            "SASS",
+            "HTML",
+            "Bootstrap",
+            "Liderazgo",
+            "Trabajo en equipo",
+            "Digitación"
+        ]
+    },
+    {
+        "id": 8,
+        "type": "web",
+        "company": "EDUTECNO",
+        "role": "Profesora de apoyo en Javascript",
+        "location": "Santiago, Chile",
+        "period": "Jul. 2021 - Nov. 2021",
+        "description": [
+            "Reforzar los temas enseñados por el profesor en el curso de JavaScript.",
+            "Monitorear el progreso de los estudiantes.",
+            "Adaptar la pedagogía adecuada para la mejor absorción del conocimiento."
+        ],
+        "skills": [
+            "JavaScript",
+            "APIs REST",
+            "HTML",
+            "CSS",
+            "SASS",
+            "Organización"
+        ]
+    },
+    {
+        "id": 7,
+        "type": "web",
+        "company": "Freelance",
+        "role": "Web UI Developer",
+        "location": "Santiago, Chile",
+        "period": "Ene. 2021 - Nov. 2021",
+        "description": [
+            "Construyó aplicaciones de una sola página (SPA) y diseño web responsivo utilizando el sistema de rejilla de Bootstrap y media queries de CSS3.",
+            "Implementó APIs RESTful con AJAX, promesas, AXIOS y async/await según las necesidades del cliente para mostrar la información requerida.",
+            " Desarrolló aplicaciones utilizando Vue.js, Vuex, Vue Router y Vue CLI."
+        ],
+        "skills": [
+            "Vue.js",
+            "JavaScript",
+            "APIs REST",
+            "HTML",
+            "CSS",
+            "SASS",
+            "AJAX",
+            "AXIOS"
+        ]
+    },
+    {
+        "id": 6,
+        "type": "other",
+        "company": "Casa Musa",
+        "role": "Coordinador de digitación",
+        "location": "Santiago, Chile",
+        "period": "May. 2020 - Jun. 2021",
+        "description": [
+            "Lideró un equipo de 3 empleados de ingreso de datos",
+            "Coordinó la logística para la gestión de inventarios, supervisando la organización con una meticulosa atención al detalle"
+        ],
+        "skills": [
+            "Liderazgo",
+            "Atención al detalle",
+            "Digitación",
+            "Adaptabilidad",
+            "Organización"
+        ]
+    },
+    {
+        "id": 5,
+        "type": "other",
+        "company": "Troya",
+        "role": "Ejecutiva de Ventas Outbound",
+        "location": "Santiago, Chile",
+        "period": "Ene. 2020 - May. 2020",
+        "description": [
+            "Ejecutiva de ventas outbound de planes de telefonía"
+        ],
+        "skills": [
+            "Atención al cliente",
+            "Ventas",
+            "Ventas outbound",
+            "Organización",
+            "Comunicación efectiva"
+        ]
+    },
+    {
+        "id": 4,
+        "type": "other",
+        "company": "Mundo Call",
+        "role": "Ejecutiva de Ventas de Intangibles",
+        "location": "Santiago, Chile",
+        "period": "Oct. 2019 - Dic. 2019",
+        "description": [
+            "Ejecutiva de ventas de seguros médicos"
+        ],
+        "skills": [
+            "Atención al cliente",
+            "Ventas",
+            "Ventas intangibles",
+            "Organización",
+            "Comunicación efectiva"
+        ]
+    },
+    {
+        "id": 3,
+        "type": "other",
+        "company": "Aguspas",
+        "role": "Ejecutiva de Ventas de Intangibles",
+        "location": "Santiago, Chile",
+        "period": "May. 2019 - Oct. 2019",
+        "description": [
+            "Ejecutiva de ventas outbound de planes de telefonía",
+            "Manejo de programas como One y Front."
+        ],
+        "skills": [
+            "Atención al cliente",
+            "Ventas",
+            "Ventas outbound",
+            "Organización",
+            "Comunicación efectiva"
+        ]
+    },
+    {
+        "id": 2,
+        "type": "other",
+        "company": "Textil Sumey",
+        "role": "Vendedora en mesón y online.",
+        "location": "Santiago, Chile",
+        "period": "Mar. 2018 - Mar. 2019",
+        "description": [
+            "Organización efectiva y atractiva de productos textiles como poleras y jockeys",
+            "Realizó ventas al por menor y al por mayor, ofreciendo atención personalizada a cada cliente, gestionando ventas online para grandes pedidos utilizando Excel para el seguimiento y la gestión eficiente de pedidos."
+        ],
+        "skills": [
+            "Atención al cliente",
+            "Ventas",
+            "Organización",
+            "Comunicación efectiva",
+            "Liderazgo",
+            "EXCEL"
+        ]
+    },
+    {
+        "id": 1,
+        "type": "other",
+        "company": "Brownies Factory",
+        "role": "Asistente personal",
+        "location": "Santiago, Chile",
+        "period": "Ene. 2018 - May. 2019",
+        "description": [
+            "Gestionó y organizó eficientemente tareas, planificó estrategias y generó ideas creativas.",
+            "Lideró la dirección de arte y coordinó un equipo de 3 personas.",
+            "Organizó la agenda para eventos y coordinó reuniones con potenciales clientes"
+        ],
+        "skills": [
+            "Atención al cliente",
+            "Organización",
+            "Comunicación efectiva",
+            "Liderazgo",
+            "EXCEL",
+            "Photoshop"
+        ]
+    }
+]
