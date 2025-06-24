@@ -48,12 +48,6 @@
     font-size: 2rem;
 }
 
-.dropdown-content {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid currentColor;
-}
-
 /* DESKTOPS */
 @media (min-width: 1024px) {
     .dropdown-texts h2 {

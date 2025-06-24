@@ -1,5 +1,7 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ExperienceDropdown.css'
+import ExperienceList from '../pages/ExperienceList';
+
 
 const ExperienceSection = ({ title, summary, type, children }) => {
     const [isHovered, setIsHovered] = useState(false);
@@ -47,7 +49,10 @@ const ExperienceSection = ({ title, summary, type, children }) => {
                     role="region"
                     aria-labelledby={`dropdown-${title.replace(/\s+/g, '-').toLowerCase()}`}
                 >
-                    {children}
+                    {children && React.isValidElement(children) && children.type === ExperienceList
+                        ? React.cloneElement(children, { isMobile })
+                        : children}
+
                 </div>
             )}
         </section>
