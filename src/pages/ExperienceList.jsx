@@ -4,6 +4,7 @@ import './ExperienceList.css'
 const ExperienceList = ({ type, isMobile }) => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [openItems, setOpenItems] = useState({});
 
     useEffect(() => {
         const fetchExperience = async () => {
@@ -22,24 +23,44 @@ const ExperienceList = ({ type, isMobile }) => {
         fetchExperience();
     }, [type]);
 
+    const toggleItem = (id) => {
+        setOpenItems((prev) => ({
+            ...prev,
+            [id]: !prev[id],
+        }));
+    };
+
     if (loading) return <p>Cargando experiencia...</p>;
 
     return (
         <ul className={`experience-list ${type}`}>
             {data.map((exp) => (
                 <li key={exp.id} className="experience-item">
-                    <div className="timeline-marker" aria-hidden="true" />
+                    <button
+                        className={`timeline-marker ${openItems[exp.id] ? 'active' : ''}`}
+                        onClick={() => toggleItem(exp.id)}
+                        aria-expanded={openItems[exp.id] || isMobile}
+                        aria-controls={`details-${exp.id}`}
+                    >
+                        <span className="visually-hidden">
+                            {openItems[exp.id] ? 'Ocultar detalles de experiencia' : 'Ver detalles de experiencia'}
+                        </span>
+                    </button>
+                    {/* <div className="timeline-marker" aria-hidden="true" /> */}
                     <div className="experience-main">
                         <div className='experience-header'>
-                            <h4>
+                            <h3>
                                 {exp.company} - <span>{exp.role}</span>
-                            </h4>
+                            </h3>
                             <p className="experience-meta">
                                 {exp.location} | {exp.period}
                             </p>
                         </div>
 
-                        <div className={`experience-details ${isMobile ? 'show' : ''}`}>
+                        <div
+                            className={`experience-details ${isMobile || openItems[exp.id] ? 'show' : ''}`}
+                            id={`details-${exp.id}`}
+                        >
                             <ul className="experience-description">
                                 {exp.description.map((item, idx) => (
                                     <li key={idx}>{item}</li>
@@ -53,8 +74,9 @@ const ExperienceList = ({ type, isMobile }) => {
                         </div>
                     </div>
                 </li>
-            ))}
-        </ul>
+            ))
+            }
+        </ul >
     );
 };
 

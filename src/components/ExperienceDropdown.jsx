@@ -32,6 +32,7 @@ const ExperienceSection = ({ title, summary, type, children }) => {
                 onClick={handleToggle}
                 aria-expanded={isOpen}
                 aria-controls={`panel-${title.replace(/\s+/g, '-').toLowerCase()}`}
+                id={`dropdown-${title.replace(/\s+/g, '-').toLowerCase()}`}
             >
                 <div className="dropdown-texts">
                     <h2>{title}</h2>
