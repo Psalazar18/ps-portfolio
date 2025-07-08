@@ -1,3 +1,14 @@
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .certificates-section {
     background-color: #222222;
     min-height: 100vh;
@@ -18,6 +29,16 @@
     padding: 2rem 1rem;
 }
 
+.certificate-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation-fill-mode: forwards;
+  animation-name: fadeSlideUp;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+}
+
 .card-img-top {
     object-fit: fill;
     height: 80%;
@@ -25,16 +46,18 @@
 
 /* Modal */
 .certificate-modal {
-    position: fixed;
-    top: 0;
+    position: absolute;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(34, 34, 34, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 999;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-top: 3rem;
 }
 
 .certificate-modal-content {
@@ -43,9 +66,10 @@
     border-radius: 8px;
     position: relative;
     max-width: 90%;
-    max-height: 90%;
+    max-height: 90vh;
     overflow: auto;
     margin-top: 5rem;
+    margin: auto;
 }
 
 .certificate-modal-content img {

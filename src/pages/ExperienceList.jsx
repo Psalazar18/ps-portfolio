@@ -46,7 +46,6 @@ const ExperienceList = ({ type, isMobile }) => {
                             {openItems[exp.id] ? 'Ocultar detalles de experiencia' : 'Ver detalles de experiencia'}
                         </span>
                     </button>
-                    {/* <div className="timeline-marker" aria-hidden="true" /> */}
                     <div className="experience-main">
                         <div className='experience-header'>
                             <h3>
