@@ -39,6 +39,5 @@ Cada push a estas ramas genera automáticamente una build gracias a **Vercel**.
 
 ## 🌍 Deploy
 
-- 🔗 Producción: https://ps-portfolio-jet.vercel.app/
-- 🔗 Staging: https://ps-portfolio-git-staging-paolas-projects-99c6358b.vercel.app/
+- 🔗 https://ps-portfolio-jet.vercel.app/
 
