@@ -62,7 +62,7 @@
 
 .certificate-modal-content {
     background-color: #fff;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 8px;
     position: relative;
     max-width: 90%;
@@ -108,6 +108,10 @@
         color: #D61AAE;
         box-shadow: inset 0 -2px 0 #D61AAE;
         display: inline-block;
+    }
+
+    .certificate-modal-content {
+        padding: 1rem;
     }
 
 }
