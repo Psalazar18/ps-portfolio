@@ -14,7 +14,7 @@ function Experience() {
             </ExperienceDropdown>
             <ExperienceDropdown
                 title="Otras experiencias profesionales"
-                summary="Una trayectoria complementaria al desarrollo que me llevaron a mejorar habilidades esenciales más allá del código"
+                summary="Una trayectoria complementaria al desarrollo que me llevaron a mejorar habilidades esenciales más allá del código."
                 type="other"
             >
                 <ExperienceList type="other"/>
