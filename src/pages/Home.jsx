@@ -1,6 +1,7 @@
 import './Home.css'
 
 function Home() {
+    console.log("staging")
     return (
         <main className="main">
             <div className="container">
