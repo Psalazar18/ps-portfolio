@@ -48,6 +48,24 @@
     font-size: 2rem;
 }
 
+.dropdown-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition: 
+    max-height 1s ease,
+    opacity 0.6s ease,
+    transform 1s ease;
+}
+
+.dropdown-content.show {
+  max-height: 2000px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* DESKTOPS */
 @media (min-width: 1024px) {
     .dropdown-texts h2 {

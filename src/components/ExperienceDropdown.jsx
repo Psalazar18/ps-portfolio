@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './ExperienceDropdown.css'
 
-const ExperienceSection = ({ title, summary, type, children }) => {
+const ExperienceDropdown = ({ title, summary, type, children }) => {
     const [isHovered, setIsHovered] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
@@ -41,18 +41,16 @@ const ExperienceSection = ({ title, summary, type, children }) => {
                 </div>
             </button>
 
-            {isOpen && (
-                <div
-                    id={`panel-${title.replace(/\s+/g, '-').toLowerCase()}`}
-                    className="dropdown-content"
-                    role="region"
-                    aria-labelledby={`dropdown-${title.replace(/\s+/g, '-').toLowerCase()}`}
-                >
-                    {children}
-                </div>
-            )}
+            <div
+                id={`panel-${title.replace(/\s+/g, '-').toLowerCase()}`}
+                className={`dropdown-content ${isOpen ? 'show' : ''}`}
+                role="region"
+                aria-labelledby={`dropdown-${title.replace(/\s+/g, '-').toLowerCase()}`}
+            >
+                {isOpen && children}
+            </div>
         </section>
     );
 };
 
-export default ExperienceSection;
+export default ExperienceDropdown;

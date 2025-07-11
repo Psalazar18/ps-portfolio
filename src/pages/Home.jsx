@@ -24,7 +24,7 @@ const HighlightWord = styled.span`
   &::after {
     content: '';
     position: absolute;
-    bottom: -2px;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 2px;
