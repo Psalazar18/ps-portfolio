@@ -4,26 +4,40 @@
 
 .navbar-brand {
     font-family: 'Oswald', sans-serif;
-    font-weight: bold;
-}
-
-.navbar-brand {
-    color:#D61AAE !important;
+    color: #D61AAE !important;
+    font-weight: bold !important;
+    font-size: 1.25rem !important;
+    font-synthesis: none;
+    min-height: 44px;
 }
 
 .navbar-brand:hover {
     color: #222222 !important;
-    box-shadow: inset 0 -2px 0 #222222;
-
 }
 
 .nav-link {
     color: #222222;
     transition: all 0.2s ease !important;
+    text-decoration: none;
+    outline: none;
+    border-bottom: none;
 }
 
-.nav-link:hover, 
+.nav-link:hover,
+.nav-link:focus-visible,
 .nav-link:focus {
     color: #D61AAE !important;
     box-shadow: inset 0 -2px 0 #D61AAE;
+}
+
+.nav-link:active {
+    outline: none;
+    box-shadow: none;
+}
+
+/* DESKTOPS */
+@media (min-width: 1024px) {
+    .navbar-brand:hover {
+        box-shadow: inset 0 -2px 0 #222222;
+    }
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './ExperienceList.css'
 
-const ExperienceList = ({ type, isMobile }) => {
+const ExperienceList = ({ type }) => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
     const [openItems, setOpenItems] = useState({});
@@ -39,7 +39,7 @@ const ExperienceList = ({ type, isMobile }) => {
                     <button
                         className={`timeline-marker ${openItems[exp.id] ? 'active' : ''}`}
                         onClick={() => toggleItem(exp.id)}
-                        aria-expanded={openItems[exp.id] || isMobile}
+                        aria-expanded={openItems[exp.id]}
                         aria-controls={`details-${exp.id}`}
                     >
                         <span className="visually-hidden">
@@ -57,7 +57,7 @@ const ExperienceList = ({ type, isMobile }) => {
                         </div>
 
                         <div
-                            className={`experience-details ${isMobile || openItems[exp.id] ? 'show' : ''}`}
+                            className={`experience-details ${ openItems[exp.id] ? 'show' : ''}`}
                             id={`details-${exp.id}`}
                         >
                             <ul className="experience-description">

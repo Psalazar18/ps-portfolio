@@ -57,12 +57,24 @@
     border: 0;
 }
 
+
+.timeline-marker:active {
+  background-color: #d61aae !important;
+  box-shadow: 0 0 0 3px rgba(245, 245, 245, 0.2);
+  transform: scale(1);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
 .experience-details {
-    display: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.4s ease;
 }
 
 .experience-details.show {
-    display: block;
+  max-height: 1000px;
+  opacity: 1;
 }
 
 .experience-description {

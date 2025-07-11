@@ -15,9 +15,9 @@ Este proyecto es un portafolio profesional hecho con **React**, donde presento m
 
 - ✨ **Animaciones suaves** en carga de componentes y navegación.
 - 🎯 **Lazy loading** de imágenes para mejorar el rendimiento.
-- 🧩 **React.cloneElement**  para extender componentes hijos con props desde el padre, permitiendo mayor reutilización y control.
+- 🔧 **Gestión de estado con props controladas** permitiendo modularidad y control de componentes desde el padre, como en los listados de experiencia.
 - 🧠 **Uso de hooks** (`useEffect`, `useState`) para manejar estados y efectos laterales.
-- 🧩 **Componentización** y paso de props entre elementos.
+- 🧩 **Componentización** Uso de componentes reutilizables para secciones clave del sitio (navbar, footer, ExperienceDropdown), asegurando mantenibilidad y consistencia.
 - ♿ **Accesibilidad**: navegación por teclado, roles ARIA, etiquetas alt.
 
 ## 🧪 CI/CD con Vercel

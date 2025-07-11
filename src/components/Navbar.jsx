@@ -16,10 +16,10 @@ function Navbar() {
                 <NavLink
                     to="/"
                     className={({ isActive }) =>
-                        isActive ? "navbar-brand text-center ms-4 fw-bold" : "navbar-brand text-center ms-4"
+                        isActive ? "navbar-brand text-center ms-3" : "navbar-brand text-center ms-3"
                     }
                     aria-current={({ isActive }) => (isActive ? "page" : undefined)}>
-                    PAOLA <br /> SALAZAR
+                    PAOLA SALAZAR
                 </NavLink>
 
                 <button

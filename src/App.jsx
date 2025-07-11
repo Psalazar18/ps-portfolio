@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation  } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import Home from './pages/Home';
 import Experience from './pages/Experience';
@@ -20,6 +20,8 @@ const fadeInUp = keyframes`
 
 const PageWrapper = styled.div`
   animation: ${fadeInUp} 1.2s ease forwards;
+  position: relative;
+  will-change: transform, opacity;
 `;
 
 function AnimatedRoutes() {
